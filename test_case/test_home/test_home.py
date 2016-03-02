@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 import log,time
 
-
-print  "this is home page testcase"
+# error test case
+prin  "this is home page testcase"

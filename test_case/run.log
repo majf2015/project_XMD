@@ -1,18 +1,13 @@
 
 
-2016-03-01 19:48:47
+2016-03-02 20:45:26
 test_case : test_print
 test_result : 
 this is my first testcase
 
 
-2016-03-01 19:48:56
+2016-03-02 20:46:34
 test_case : test_print
-test_result : 
-this is my first testcase
-
-
-2016-03-01 19:49:19
-test_case : test_print
+run_time : 0.052 sec
 test_result : 
 this is my first testcase
