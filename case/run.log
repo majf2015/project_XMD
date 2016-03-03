@@ -1,0 +1,10 @@
+2016-03-02 20:46:34
+test_case : test_print
+run_time : 0.052 sec
+test_result :
+this is my first testcase
+
+2016-03-03 19:18:02
+test_case : print
+run_time : 0.017 sec
+test_result : 
