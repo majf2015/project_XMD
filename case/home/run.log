@@ -1,9 +1,12 @@
-2016-03-02 20:46:34
-test_case : test_home
-run_time : 0.045 sec
-test_result :
 
-2016-03-03 19:18:02
-test_case : home
-run_time : 0.009 sec
+
+2016-03-04 17:59:04
+test_case : home.py
+run_time : 0.041 sec
+test_result : 
+
+
+2016-03-04 17:59:54
+test_case : home.py
+run_time : 0.040 sec
 test_result : 
