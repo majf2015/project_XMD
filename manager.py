@@ -7,7 +7,9 @@ class Manager():
     def __init__(self, root, file):
         self.root = root
         self.file = file
+        self.run_time = 0.0
         self.result = "ready"
+
 
     def set_root(self, root):
         self.root = root
@@ -27,6 +29,12 @@ class Manager():
     def get_result(self):
         return self.result
 
+    def set_run_time(self, time):
+        self.run_time =  '%.8f sec' % time
+
+    def get_run_time(self):
+        return self.run_time
+
 class Run():
     def __init__(self):
         self.root = 'E:/project_XMD/case'
@@ -45,25 +53,32 @@ class Run():
 
     def run(self):
         self.data()
-        for test_case in self.test_cases:
-            file = test_case.get_file()
-            os.chdir(test_case.get_root())
-            time_start = time.time()
-            test_case.set_result(os.popen('python  %s' % file).read())
-            time_end = time.time()
-            result = test_case.get_result()
+        def cmd(test_case, file):
+            result = os.popen('python  %s' % file).read()
+            test_case.set_result(result)
+            print result
+            print test_case.get_result()
 
-            log.mylog(file, result, time_end-time_start)
+        time_start = time.time()
+        for test_case in self.test_cases:
+            os.chdir(test_case.get_root())
+            time_s = time.time()
+            file = test_case.get_file()
+            threading.Thread(target=cmd, args=(test_case, file)).start()
+            time_e = time.time()
+            test_case.set_run_time(time_e-time_s)
+            result = test_case.get_result()
             if result == '':
                 self.test_case_error += 1
             else:
                 self.test_case_success += 1
+            log.mylog(file, test_case.get_run_time(), result)
+        time_end = time.time()
         print 'test_case_success : %d \n' % self.test_case_success
         print 'test_case_error : %d \n' % self.test_case_error
+        print 'run_time_sum : %.8f sec' % (time_end-time_start)
 
 
 test = Run()
-#thread = threading.Thread(target=test.run)
-#thread.start()
 test.run()
 

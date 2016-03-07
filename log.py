@@ -24,12 +24,12 @@ def log(name):
 
 #log('myself')
 
-def mylog(name, result, run_time):
+def mylog(name, run_time, result):
     string = ''
     ISOTIMEFORMAT='%Y-%m-%d %X'
     string += '\n\n' + time.strftime( ISOTIMEFORMAT, time.localtime(time.time())) + '\n'\
               + 'test_case : %s' % name +'\n'\
-              + 'run_time : %.3f sec' % run_time +'\n'\
+              + 'run_time : %s' % run_time +'\n'\
               + 'test_result : \n%s' % result
     with open('run.log', 'ab') as file:
         file.write(string)
