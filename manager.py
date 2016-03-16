@@ -10,34 +10,42 @@ class Manager():
         self.run_time = 0.0
         self.result = "ready"
 
-
-    def set_root(self, root):
-        self.root = root
-
-    def get_root(self):
+    @property
+    def root(self):
         return self.root
 
-    def set_file(self, file):
-        self.file = file
+    @root.setter
+    def root(self, root):
+        self.root = root
 
-    def get_file(self):
+    @property
+    def file(self):
         return self.file
 
-    def set_result(self, result):
-        self.result = result
+    @file.setter
+    def file(self, file):
+        self.file = file
 
-    def get_result(self):
+    @property
+    def result(self):
         return self.result
 
-    def set_run_time(self, time):
-        self.run_time =  '%.8f sec' % time
+    @result.setter
+    def result(self, result):
+        self.result = result
 
-    def get_run_time(self):
+    @property
+    def run_time(self):
         return self.run_time
+
+    @run_time.setter
+
+    def run_time(self, time):
+        self.run_time =  '%.8f sec' % time
 
 class Run():
     def __init__(self):
-        self.root = 'E:/project_XMD/case'
+        self.root = 'E:/project_XMD/testcase'
         self.test_cases = []
         self.test_case_error = 0
         self.test_case_success = 0
@@ -51,28 +59,28 @@ class Run():
                     if file_type == '.py':
                         self.test_cases.append(Manager(root, file))
 
-    def run(self):
-        self.data()
-        def cmd(test_case, file):
+    def cmd(self,test_case, file):
             result = os.popen('python  %s' % file).read()
-            test_case.set_result(result)
+            test_case.result = result
             print result
-            print test_case.get_result()
+            print test_case.result
 
+    def run_test_case(self):
+        self.data()
         time_start = time.time()
         for test_case in self.test_cases:
-            os.chdir(test_case.get_root())
+            os.chdir(test_case.root)
             time_s = time.time()
-            file = test_case.get_file()
-            threading.Thread(target=cmd, args=(test_case, file)).start()
+            file = test_case.file
+            threading.Thread(target=self.cmd, args=(test_case, file)).start()
             time_e = time.time()
-            test_case.set_run_time(time_e-time_s)
-            result = test_case.get_result()
+            test_case.run_time = time_e-time_s
+            result = test_case.result
             if result == '':
                 self.test_case_error += 1
             else:
                 self.test_case_success += 1
-            log.mylog(file, test_case.get_run_time(), result)
+            log.mylog(file, test_case.run_time, result)
         time_end = time.time()
         print 'test_case_success : %d \n' % self.test_case_success
         print 'test_case_error : %d \n' % self.test_case_error
@@ -80,5 +88,5 @@ class Run():
 
 
 test = Run()
-test.run()
+test.run_test_case()
 
