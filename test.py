@@ -50,8 +50,12 @@ class Threa:
         ts = time.time()
         t0 = threading.Thread(target=self.thread1)
         t0.start()
+
         t1 = threading.Thread(target=self.thread2)
         t1.start()
+
+        t0.join()
+        t1.join()
         te = time.time()
         print "\nthread  run time: %.8f sec" % (te-ts)
 
