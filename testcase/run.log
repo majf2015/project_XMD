@@ -1,132 +1,26 @@
 
 
-2016-03-22 18:08:36
-test_case : print.py
-run_time : 0.0460000038147
-test_result : 
-ready
+2016-03-23 20:55:17
+test_case_success : 6
+test_case_error : 0
+no_thread_run_time_sum : 0.00000000 sec
+thread_all_run_time_sum : 0.14100003 sec
 
-2016-03-22 18:14:04
-test_case : print.py
-run_time : 0.0439999103546
-test_result : 
+2016-03-23 20:55:17
+test_case_success : 6
+test_case_error : 0
+no_thread_run_time_sum : 0.20700002 sec
+thread_all_run_time_sum : 0.14100003 sec
 
-
-2016-03-22 18:14:04
-test_case : print.py
-run_time : 0.0349998474121
-test_result : 
-
-
-2016-03-22 18:19:12
-test_case : print.py
-run_time : 1.00900006294
-test_result : 
+2016-03-23 21:11:03
+no_thread_run_time_sum : 0.00000000 sec
+thread_all_run_time_sum : 0.14299989 sec
+success : 6
+error : 0
 
 
-2016-03-22 18:19:12
-test_case : print.py
-run_time : 0.069000005722
-test_result : 
-
-
-2016-03-22 20:09:01
-test_case : print.py
-run_time : 1.01099991798
-test_result : 
-
-
-2016-03-22 20:09:02
-test_case : print.py
-run_time : 0.0710000991821
-test_result : 
-
-
-2016-03-22 20:09:05
-test_case : print.py
-run_time : 1.00199985504
-test_result : 
-
-
-2016-03-22 20:09:24
-test_case : print.py
-run_time : 0.0420000553131
-test_result : 
-
-
-2016-03-22 20:09:24
-test_case : print.py
-run_time : 0.0320000648499
-test_result : 
-
-
-2016-03-22 20:09:24
-test_case : print.py
-run_time : 0.0380001068115
-test_result : 
-
-
-2016-03-22 20:11:03
-test_case : print.py
-run_time : 0.0450000762939
-test_result : 
-
-
-2016-03-22 20:11:03
-test_case : print.py
-run_time : 0.0319998264313
-test_result : 
-
-
-2016-03-22 20:11:03
-test_case : print.py
-run_time : 0.0369999408722
-test_result : 
-
-
-2016-03-22 20:28:55
-test_case : print.py
-run_time : 0.0450000762939
-test_result : 
-
-
-2016-03-22 20:28:55
-test_case : print.py
-run_time : 0.0329999923706
-test_result : 
-
-
-2016-03-22 20:28:56
-test_case : print.py
-run_time : 0.0400002002716
-test_result : 
-
-
-2016-03-22 20:31:33
-test_case : print.py
-run_time : 0.0460000038147
-test_result : 
-
-
-2016-03-22 20:31:33
-test_case : print.py
-run_time : 0.0329999923706
-test_result : 
-
-
-2016-03-22 20:31:33
-test_case : print.py
-run_time : 0.0369999408722
-test_result : 
-
-
-2016-03-22 20:33:31
-test_case : print.py
-run_time : 0.0469999313354
-test_result : 
-
-
-2016-03-22 20:33:32
-test_case : print.py
-run_time : 0.0329999923706
-test_result : 
+2016-03-23 21:11:03
+no_thread_run_time_sum : 0.20900011 sec
+thread_all_run_time_sum : 0.14299989 sec
+success : 6
+error : 0
