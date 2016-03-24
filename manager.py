@@ -59,53 +59,47 @@ class Run():
                     file_name, file_type = os.path.splitext(file)
                     if file_type == '.py':
                         self.test_cases.append(Manager(root, file))
-    def test_case_log(self,name, run_time, result):
-        string = ''
-        string += '\n\n' + time.strftime( '%Y-%m-%d %X', time.localtime(time.time())) + '\n'\
-              + 'test_case : %s' % name +'\n'\
-              + 'run_time : %s' % run_time +'\n'\
-              + 'test_result : \n%s' % result
-        with open('run.log', 'ab') as file:
-            file.write(string)
-            file.close()
+                    elif  file_type == '.log':
+                        with open('run.log', 'ab') as file:
+                            file.truncate()
 
-    def manager_log(self,no_thread_time, thread_time,success, error, error_test_cases):
-        string = ''
-        string += '\n\n' + time.strftime( '%Y-%m-%d %X', time.localtime(time.time())) + '\n'\
-                  + 'no_thread_run_time_sum : %.8f sec' % no_thread_time +'\n'\
-                  + 'thread_all_run_time_sum : %.8f sec' % thread_time +'\n'\
-                  + 'success : %d' % success +'\n'\
-                  + 'error : %d' % error +'\n'
-        for error_test_case in  error_test_cases:
-                  string +=' %s : %s ' % (error_test_case.root, error_test_case.file )+'\n'
+    def test_case_log(self,**kwargs):
+        string = '\n\n' + time.strftime( '%Y-%m-%d %X', time.localtime(time.time())) + '\n'
+        for k, v in kwargs.iteritems():
+            if type(v) == list:
+                string +=  '%s : ' % k +'\n'
+                for error_test_case in  v:
+                    string +=' %s : %s ' % (error_test_case.root, error_test_case.file )+'\n'
+            else:
+                string +=  '%s : %s' % (k, v) +'\n'
         with open('run.log', 'ab') as file:
             file.write(string)
-            file.close()
 
     def runlog(self):
         self.test_case_error = 0
         self.test_case_success = 0
         for test_case in self.test_cases:
             os.chdir(test_case.root)
-            self.test_case_log(test_case.file, test_case.run_time, test_case.result)
+            self.test_case_log(name = test_case.file,
+                               run_time = test_case.run_time,
+                               result = test_case.result)
             if test_case.result == '' or test_case.result == None  :
                 self.test_case_error += 1
                 self.error_test_case.append(test_case)
             else:
                 self.test_case_success += 1
         os.chdir(self.root)
-        self.manager_log(self.no_thread_run_time_sum, self.thread_all_run_time_sum,
-                         self.test_case_success,self.test_case_error,self.error_test_case)
+        self.test_case_log(thread_time = self.thread_all_run_time_sum,
+                           success = self.test_case_success,
+                           error = self.test_case_error,
+                           error_test_cases = self.error_test_case)
+                           #no_thread_time = self.no_thread_run_time_sum)
 
     def thread_all(self, test_cases):
         for test_case in test_cases:
-            #os.chdir(test_case.root)
             time_s = time.time()
-            #thread_test_case.result = os.popen('python  %s' % thread_test_case.file).read()
             cmd = "python %s/%s" % (test_case.root, test_case.file)
             result = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-            #result = subprocess.Popen('python  %s' % test_case.file, shell=True, stdout=subprocess.PIPE)
-            #result.wait()
             test_case.result = result.stdout.read()
             time_e = time.time()
             test_case.run_time = time_e-time_s
@@ -124,12 +118,9 @@ class Run():
 
     def nothread(self):
         for test_case in self.test_cases:
-            #os.chdir(test_case.root)
             time_s = time.time()
-            #test_case.result = os.popen('python  %s' % test_case.file).read()
             cmd = "python %s/%s" % (test_case.root, test_case.file)
             result = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-            #result = subprocess.Popen('python  %s' % test_case.file, shell=True, stdout=subprocess.PIPE)
             result.wait()
             test_case.result = result.stdout.read()
             time_e = time.time()
@@ -146,5 +137,5 @@ class Run():
 test = Run()
 test.data()
 test.run_thread_test_case()
-test.run_no_thread_test_case()
+#test.run_no_thread_test_case()
 

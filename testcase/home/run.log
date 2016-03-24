@@ -1,28 +1,7 @@
 
 
-2016-03-23 20:55:17
-test_case : home.py
-run_time : 0.0460000038147
-test_result : 
-this is home page testcase
+2016-03-24 20:52:01
+result : this is home page testcase
 
-
-2016-03-23 20:55:17
-test_case : home.py
-run_time : 0.0339999198914
-test_result : 
-this is home page testcase
-
-
-2016-03-23 21:11:03
-test_case : home.py
-run_time : 0.0469999313354
-test_result : 
-this is home page testcase
-
-
-2016-03-23 21:11:03
-test_case : home.py
-run_time : 0.0339999198914
-test_result : 
-this is home page testcase
+name : home.py
+run_time : 0.0500001907349

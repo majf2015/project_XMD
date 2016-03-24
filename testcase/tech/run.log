@@ -1,28 +1,7 @@
 
 
-2016-03-23 20:55:17
-test_case : tech.py
-run_time : 0.0460000038147
-test_result : 
-this is tech testcase
+2016-03-24 20:52:01
+result : this is tech testcase
 
-
-2016-03-23 20:55:17
-test_case : tech.py
-run_time : 0.0350000858307
-test_result : 
-this is tech testcase
-
-
-2016-03-23 21:11:03
-test_case : tech.py
-run_time : 0.0469999313354
-test_result : 
-this is tech testcase
-
-
-2016-03-23 21:11:03
-test_case : tech.py
-run_time : 0.0360000133514
-test_result : 
-this is tech testcase
+name : tech.py
+run_time : 0.0500001907349

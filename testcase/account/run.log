@@ -1,28 +1,6 @@
 
 
-2016-03-23 20:55:17
-test_case : account.py
-run_time : 0.0479998588562
-test_result : 
-this is  account testcase
-
-
-2016-03-23 20:55:17
-test_case : account.py
-run_time : 0.0339999198914
-test_result : 
-this is  account testcase
-
-
-2016-03-23 21:11:03
-test_case : account.py
-run_time : 0.0490000247955
-test_result : 
-this is  account testcase
-
-
-2016-03-23 21:11:03
-test_case : account.py
-run_time : 0.0339999198914
-test_result : 
-this is  account testcase
+2016-03-24 20:52:01
+result : 
+name : account.py
+run_time : 0.0520000457764

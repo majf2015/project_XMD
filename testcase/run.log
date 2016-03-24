@@ -1,26 +1,9 @@
 
 
-2016-03-23 20:55:17
-test_case_success : 6
-test_case_error : 0
-no_thread_run_time_sum : 0.00000000 sec
-thread_all_run_time_sum : 0.14100003 sec
-
-2016-03-23 20:55:17
-test_case_success : 6
-test_case_error : 0
-no_thread_run_time_sum : 0.20700002 sec
-thread_all_run_time_sum : 0.14100003 sec
-
-2016-03-23 21:11:03
-no_thread_run_time_sum : 0.00000000 sec
-thread_all_run_time_sum : 0.14299989 sec
-success : 6
-error : 0
-
-
-2016-03-23 21:11:03
-no_thread_run_time_sum : 0.20900011 sec
-thread_all_run_time_sum : 0.14299989 sec
-success : 6
-error : 0
+2016-03-24 20:52:01
+error_test_cases : 
+ E:/project_XMD/testcase\account : account.py 
+ E:/project_XMD/testcase\data : data.py 
+error : 2
+success : 4
+thread_time : 0.149000167847
