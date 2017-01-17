@@ -1,0 +1,13 @@
+mysql_python安装：
+提示unable to find vcvarsall.bat（需要开发环境扩展包支持：如先安装VS）
+
+解决方法直接下载修复版本安装：MySQL-python-1.2.3.win-amd64-py2.7.exe (1.0 MiB)
+http://www.codegood.com/archives/129
+
+用户使用指导：
+http://mysql-python.sourceforge.net/MySQLdb.html
+http://www.cnblogs.com/coser/archive/2012/01/12/2320741.html
+cursor:
+http://www.jb51.net/article/57290.htm
+connect = Connection = Connect
+http://blog.163.com/longsu2010@yeah/blog/static/173612348201174113815700/

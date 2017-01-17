@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, time, threading, subprocess
+import os, time, threading, subprocess,global_attributes
 
 
 class Manager():
@@ -9,6 +9,8 @@ class Manager():
         self.run_time = 0.0
         self.result = "ready"
 
+
+    #把一些方法变成可读写属性来调用
     @property
     def root(self):
         return self.root
@@ -50,7 +52,9 @@ class Run():
         self.test_case_success = 0
         self.test_case_error = 0
         self.error_test_case = []
+        self.debug = global_attributes.debug
 
+    #收集项目中的test_case文件，如果需要顺便清空日志文件
     def data(self):
         for root, dirs, files in os.walk(self.root):
             os.chdir(root)
@@ -59,10 +63,12 @@ class Run():
                     file_name, file_type = os.path.splitext(file)
                     if file_type == '.py':
                         self.test_cases.append(Manager(root, file))
-                    elif  file_type == '.log':
+                    #清空日志文件
+                    elif self.debug and file_type == '.log':
                         with open('run.log', 'ab') as file:
                             file.truncate()
 
+    #对测试用例执行结果进行整合，最后写入对应日志文件
     def test_case_log(self,**kwargs):
         string = '\n\n' + time.strftime( '%Y-%m-%d %X', time.localtime(time.time())) + '\n'
         for k, v in kwargs.iteritems():
@@ -75,6 +81,7 @@ class Run():
         with open('run.log', 'ab') as file:
             file.write(string)
 
+    #做一些简单的统计，把执行结果提交给对应方法进行整合
     def runlog(self):
         self.test_case_error = 0
         self.test_case_success = 0
@@ -88,6 +95,7 @@ class Run():
                 self.error_test_case.append(test_case)
             else:
                 self.test_case_success += 1
+        #所有测试用例的执行成功与失败统计，日志文件在test_case根目录下的run.log文件中
         os.chdir(self.root)
         self.test_case_log(thread_time = self.thread_all_run_time_sum,
                            success = self.test_case_success,
@@ -95,6 +103,7 @@ class Run():
                            error_test_cases = self.error_test_case)
                            #no_thread_time = self.no_thread_run_time_sum)
 
+    #先将所有测试用例装入管道，设置一些需要的统计，获取结果参数，以便执行时取得对应的值
     def thread_all(self, test_cases):
         for test_case in test_cases:
             time_s = time.time()
@@ -104,6 +113,7 @@ class Run():
             time_e = time.time()
             test_case.run_time = time_e-time_s
 
+    #创建两个来分批执行测试用例，并将执行结果重新收集到管道中，计算整个项目测试用例执行时间
     def run_thread_test_case(self):
         time_start = time.time()
         thread1 = threading.Thread(target=self.thread_all, args=(self.test_cases[: len(self.test_cases)/2],))
@@ -116,7 +126,8 @@ class Run():
         self.thread_all_run_time_sum = time_end-time_start
         self.runlog()
 
-    def nothread(self):
+    #以下代码是对比在执行测试用例时不使用线程同步批量执行所需要的执行时间
+    '''def nothread(self):
         for test_case in self.test_cases:
             time_s = time.time()
             cmd = "python %s/%s" % (test_case.root, test_case.file)
@@ -131,7 +142,7 @@ class Run():
         self.nothread()
         time_end1 = time.time()
         self.no_thread_run_time_sum = time_end1-time_start1
-        self.runlog()
+        self.runlog()'''
 
 
 test = Run()
