@@ -1,8 +1,7 @@
 # -*- coding:UTF-8 -*-
-
 import MySQLdb
 import global_attributes
-import json
+
 
 class Data:
     def __init__(self):
@@ -17,15 +16,20 @@ class Data:
         conn = MySQLdb.Connection\
             (host = self.host, port = self.port, user = self.user, passwd = self.passwd, db = self.db)
         cursor = conn.cursor()
-        cursor.execute\
-            ("""SELECT * FROM `spa_user_act` WHERE act_id = '819732487256154112' and user_id = '745086393335681024'""")
-        result = cursor.fetchall()
-        if self.debug :
-            count = 0
-            for i  in result:
-                print json.dumps(i,encoding='UTF-8',ensure_ascii=False)
-                count += 1
-            print count
+        sql_update = "UPDATE `spa_lucky_wheel_record` set `status` = 0 WHERE club_id = '773358894821941248' and verify_code = '176567404992'"
+        #sql_select = "SELECT * FROM `spa_user_act` WHERE act_id = '819732487256154112' and user_id = '745086393335681024'"
+        try:
+            cursor.execute(sql_update)
+            conn.commit()
+            result = cursor.fetchall()
+            if self.debug :
+                print cursor.rowcount
+        except Exception as e:
+            print e
+            conn.rollback()
+
+        cursor.close()
+        conn.close()
 
 
 db = Data()

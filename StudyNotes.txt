@@ -11,3 +11,33 @@ cursor:
 http://www.jb51.net/article/57290.htm
 connect = Connection = Connect
 http://blog.163.com/longsu2010@yeah/blog/static/173612348201174113815700/
+
+
+selenium webdriver
+下载地址：
+https://pypi.python.org/pypi/selenium
+下载.tar.gz并解压
+在命令提示符窗口进入selenium内setup.py文件目录：命令pip setup.py install
+chrome及chromedriver.exe
+selenium webdriver需要浏览器的driver.exe
+网上下载chrome浏览器，并安装
+下载chromedriver.exe文件，无需安装，把该文件放到chrome的安装目录下与chrome.exe同一文件夹中
+重新启动电脑即可
+
+问题1：class定位报错
+find_element_by_xpath("//input[@value= '立即登录']")
+
+问题2：每运行完一个case浏览器就关闭了，每次都需要重新打开并重新登录
+等待验证：
+1.保持上一个case  的driver  不执行 driver.close  和 driver.quit
+2.使用全局变量 保持住上一个用例实例化的driver对象。
+3.第二个用例  直接使用用例1的driver对象 不要重新实例化。
+
+再有就是修改 webdriver源码，在用例二中  把webdriver setsession方法提供出来，在用例一不执行销毁浏览器的情况下，把用例1产生的webdriver session ID（webdriver.getSessionID()）拿出来给 第二个用例的webdriver使用，注意  这里的session并不是 你本地请求测试网站时产生的session而是 webdriver 启动浏览器时产生的一个session这个session就是 webdriver client (你就认为是你的用例吧)与目标浏览器之间的会话句柄。
+
+问题3：cursor.execute执行update失效
+select不用执行commit, insert/update/delete需要报告commit
+
+
+
+

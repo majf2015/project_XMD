@@ -1,4 +1,2 @@
-import time
+# -*- coding: utf-8 -*-
 
-#time.sleep(2)
-print  "this is home page testcase"
