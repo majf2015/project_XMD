@@ -1,36 +1,42 @@
 # -*- coding:UTF-8 -*-
-import mysqldb
+import MySQLdb
 import global_attributes
 
 
 class Mysqldb:
     def __init__(self):
-        self.host = '192.168.1.100'
-        self.port = 3306
-        self.user = 'spa'
-        self.passwd = 'spa'
-        self.db = 'spa'
+        self.db = global_attributes.db
         self.debug = global_attributes.debug
+        self.coupon_data = global_attributes.coupon_data
+        self.conn = MySQLdb.Connection\
+        (host = self.db['host'], port = self.db['port'], user = self.db['user'], passwd = self.db['passwd'], db = self.db['db'])
+        self.cursor = self.conn.cursor()
 
-    def test(self):
-        conn = mysqldb.Connection\
-            (host = self.host, port = self.port, user = self.user, passwd = self.passwd, db = self.db)
-        cursor = conn.cursor()
-        sql_update = "UPDATE `spa_lucky_wheel_record` set `status` = 0 WHERE club_id = '773358894821941248' and verify_code = '176567404992'"
-        #sql_select = "SELECT * FROM `spa_user_act` WHERE act_id = '819732487256154112' and user_id = '745086393335681024'"
+    def run_main(self):
+        #self.db_verify_coupon()
+        self.db_registered()
+
+        self.cursor.close()
+        self.conn.close()
+
+    def db_verify_coupon(self):
+        sql_update_coupon = "UPDATE `spa_user_act` SET can_use_sum = 1 , coupon_settled = 'N' " \
+                     "WHERE club_id = %s "  % \
+                     "and coupon_no in (%s, %s, %s, %s, %s, %s, %s)" % tuple(self.coupon_data.itervalues())
         try:
-            cursor.execute(sql_update)
-            conn.commit()
-            result = cursor.fetchall()
+            self.cursor.execute(sql_update_coupon)
+            self.conn.commit()
+            result = self.cursor.fetchall()
             if self.debug :
-                print cursor.rowcount
+                print self.cursor.rowcount
         except Exception as e:
             print e
-            conn.rollback()
+            self.conn.rollback()
 
-        cursor.close()
-        conn.close()
-
+    def db_registered(self):
+        sql_select_register = "SELECT count(*) from spa_user_club uc inner join  spa_user u on uc.user_id = u.id WHERE uc.club_id = '773358894821941248' "
+        self.cursor.execute(sql_select_register)
+        result = filter(str.isdigit,str(self.cursor.fetchall())) #str
 
 db = Mysqldb()
-db.test()
+db.run_main()
