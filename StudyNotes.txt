@@ -29,6 +29,8 @@ find_element_by_xpath("//input[@value= '立即登录']")
 
 问题2：每运行完一个case浏览器就关闭了，每次都需要重新打开并重新登录
 在用例二中  把webdriver setsession方法提供出来
+unittest，每一个测试用例都会执行setup、tesrDown这两个方法
+
 
 问题3：cursor.execute执行update失效
 select不用执行commit, insert/update/delete需要commit
@@ -37,6 +39,10 @@ select不用执行commit, insert/update/delete需要commit
 导入python自带ConfigParser,配置文件格式：[]session,属性键值对
 
 问题5：检查页面展示数据
+unicode可表示的编码范围比utf8大，所以不能用这个方法filter(str.isdigit,str(r))----来提取数字
+r :<type 'unicode'>
+需要转换：filter(str.isdigit,str(r.encode('utf-8')))
+
 
 
 
