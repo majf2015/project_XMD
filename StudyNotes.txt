@@ -28,15 +28,15 @@ selenium webdriver需要浏览器的driver.exe
 find_element_by_xpath("//input[@value= '立即登录']")
 
 问题2：每运行完一个case浏览器就关闭了，每次都需要重新打开并重新登录
-等待验证：
-1.保持上一个case  的driver  不执行 driver.close  和 driver.quit
-2.使用全局变量 保持住上一个用例实例化的driver对象。
-3.第二个用例  直接使用用例1的driver对象 不要重新实例化。
-
-再有就是修改 webdriver源码，在用例二中  把webdriver setsession方法提供出来，在用例一不执行销毁浏览器的情况下，把用例1产生的webdriver session ID（webdriver.getSessionID()）拿出来给 第二个用例的webdriver使用，注意  这里的session并不是 你本地请求测试网站时产生的session而是 webdriver 启动浏览器时产生的一个session这个session就是 webdriver client (你就认为是你的用例吧)与目标浏览器之间的会话句柄。
+在用例二中  把webdriver setsession方法提供出来
 
 问题3：cursor.execute执行update失效
-select不用执行commit, insert/update/delete需要报告commit
+select不用执行commit, insert/update/delete需要commit
+
+问题4：如何修改配置文件把数据写入配置文件
+导入python自带ConfigParser,配置文件格式：[]session,属性键值对
+
+问题5：检查页面展示数据
 
 
 

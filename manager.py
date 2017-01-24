@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, time, threading, subprocess,global_attributes
+import os, time, threading, subprocess,test_data
 
 
 class Manager():
@@ -52,7 +52,7 @@ class Run():
         self.test_case_success = 0
         self.test_case_error = 0
         self.error_test_case = []
-        self.debug = global_attributes.debug
+        self.debug = test_data.debug
 
     #收集项目中的test_case文件，如果需要顺便清空日志文件
     def data(self):

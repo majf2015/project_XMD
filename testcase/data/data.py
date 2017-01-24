@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
-import login,global_attributes,time,unittest
+import login,time,unittest
+import ConfigParser
 
 
-class Home(unittest.TestCase):
+class Data(unittest.TestCase):
     def setUp(self):
+        self.conf = ConfigParser.ConfigParser()
+        self.conf.read(r"E:/project_XMD/test_data.conf")
+        self.debug = self.conf.get('Debug','debug')
         self.Browser = login.Login()
         self.Browser.login()
         self.browser = self.Browser.browser
@@ -15,5 +19,4 @@ class Home(unittest.TestCase):
         time.sleep(1)
         self.browser.find_element_by_css_selector("div[nav = \"dataStatistics\"").click()
         self.browser.find_element_by_css_selector("li[nav=\"registeredDataStatistics\"").click()
-
         time.sleep(1)

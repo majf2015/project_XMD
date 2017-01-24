@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
-import login,global_attributes,time,unittest
+import login,ConfigParser,time,unittest
 
 
 class Home(unittest.TestCase):
     def setUp(self):
+        self.conf = ConfigParser.ConfigParser()
+        self.conf.read(r"E:/project_XMD/test_data.conf")
+        self.debug = int(self.conf.get('Debug','debug'))
         self.Browser = login.Login()
         self.Browser.login()
         self.browser = self.Browser.browser
-        self.coupon_data = global_attributes.coupon_data
-        self.coupon_phone = global_attributes.coupon_phone
-        self.debug = global_attributes.debug
-
-    def tearDown(self):
-        self.browser.quit()
+        self.coupon_data =  dict(self.conf.items('Coupon'))
+        self.coupon_phone = self.conf.get('Phone','phone')
 
     def test_verify_coupon_no(self):
         for test_data in self.coupon_data:
