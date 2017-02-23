@@ -7,7 +7,7 @@ class Mysqldb:
     def __init__(self):
         self.conf = ConfigParser.ConfigParser()
         self.conf.read(r"test_data.conf")
-        self.debug = self.conf.get('Debug','debug')
+        self.debug = int(self.conf.get('Debug','debug'))
         self.db = dict(self.conf.items('DB'))
         self.account = dict(self.conf.items('ManagerAccount'))
         self.coupon_data = dict(self.conf.items('Coupon'))
@@ -18,6 +18,8 @@ class Mysqldb:
 
     def run_main(self):
         self.db_tech()
+        self.db_busy_tech()
+        self.db_free_tech()
         self.db_verify_coupon()
         self.db_verify_order()
         self.db_registered()
@@ -32,7 +34,24 @@ class Mysqldb:
         self.cursor.execute(sql_select_tech)
         self.result['tech'] = filter(str.isdigit,str(self.cursor.fetchall())) #str
         if self.debug:
+            print self.result['tech']
             print "db_tech"
+
+    def db_busy_tech(self):
+        sql_select_tech = "SELECT count(*) FROM spa_user WHERE user_type = 'tech' and status = 'busy' and club_id =  %s " %  self.account['clubid']
+        self.cursor.execute(sql_select_tech)
+        self.result['busy_tech'] = filter(str.isdigit,str(self.cursor.fetchall())) #str
+        if self.debug:
+            print self.result['busy_tech']
+            print "db_busy_tech"
+
+    def db_free_tech(self):
+        sql_select_tech = "SELECT count(*) FROM spa_user WHERE user_type = 'tech' and " \
+                          "status = 'free' and club_id =  %s " %  self.account['clubid']
+        self.cursor.execute(sql_select_tech)
+        self.result['free_tech'] = filter(str.isdigit,str(self.cursor.fetchall())) #str
+        if self.debug:
+            print "db_free_tech"
 
     def db_verify_coupon(self):
         sql_update_coupon = "UPDATE `spa_user_act` SET can_use_sum = 1 , coupon_settled = 'N' " \
@@ -92,6 +111,8 @@ class Mysqldb:
 
     def write_to_test_data(self):
         self.conf.set('Tech','tech',self.result['tech'])
+        self.conf.set('Tech','busy_tech',self.result['busy_tech'])
+        self.conf.set('Tech','free_tech',self.result['free_tech'])
         self.conf.set('DataAnalysis','register',self.result['register'])
         self.conf.set('DataAnalysis','phone_register',self.result['phone_register'])
         self.conf.write(open('test_data.conf','w'))

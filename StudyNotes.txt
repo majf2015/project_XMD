@@ -43,6 +43,18 @@ unicode可表示的编码范围比utf8大，所以不能用这个方法filter(str.isdigit,str(r))---
 r :<type 'unicode'>
 需要转换：filter(str.isdigit,str(r.encode('utf-8')))
 
+问题6：时间控件选择输入格式
+YYYY-MM-DD
+
+问题7：中文
+s = '中文'
+u = u'中文'
+print
+s.decode('utf-8')
+u.encode('utf-8')
+
+问题：获取标签个数
+
 
 
 
