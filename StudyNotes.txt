@@ -53,7 +53,7 @@ print
 s.decode('utf-8')
 u.encode('utf-8')
 
-问题：获取标签个数
+
 
 
 

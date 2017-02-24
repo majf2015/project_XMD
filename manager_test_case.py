@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, time, threading, subprocess,test_data
+import os, time, threading, subprocess,ConfigParser
 
 
 class Manager():
@@ -52,7 +52,9 @@ class Run():
         self.test_case_success = 0
         self.test_case_error = 0
         self.error_test_case = []
-        self.debug = test_data.debug
+        self.conf = ConfigParser.ConfigParser()
+        self.conf.read(r"E:/project_XMD/config.conf")
+        self.debug = int(self.conf.get('Debug','debug'))
 
     #收集项目中的test_case文件，如果需要顺便清空日志文件
     def data(self):

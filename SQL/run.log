@@ -1,0 +1,16 @@
+
+
+2017-02-24 12:59:01
+result : 
+name : __init__.py
+run_time : 0.217000007629
+
+
+2017-02-24 12:59:01
+error : 3
+error_sql : 
+ E:/project_XMD/SQL : __init__.py 
+ E:/project_XMD/SQL\data : __init__.py 
+ E:/project_XMD/SQL\home : __init__.py 
+success : 2
+thread_time : 0.730999946594

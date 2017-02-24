@@ -5,7 +5,7 @@ import ConfigParser
 class Login:
     def __init__(self):
         self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/test_data.conf")
+        self.conf.read(r"E:/project_XMD/config.conf")
         self.debug = int(self.conf.get('Debug','debug'))
         self.url = self.conf.get('Url','url')
         self.account = dict(self.conf.items('ManagerAccount'))
