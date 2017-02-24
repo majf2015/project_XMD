@@ -105,6 +105,7 @@ class Run():
                            error_test_cases = self.error_test_case)
                            #no_thread_time = self.no_thread_run_time_sum)
 
+    '''
     #先将所有测试用例装入管道，设置一些需要的统计，获取结果参数，以便执行时取得对应的值
     def thread_all(self, test_cases):
         for test_case in test_cases:
@@ -128,8 +129,10 @@ class Run():
         self.thread_all_run_time_sum = time_end-time_start
         self.runlog()
 
+    '''
+
     #以下代码是对比在执行测试用例时不使用线程同步批量执行所需要的执行时间
-    '''def nothread(self):
+    def nothread(self):
         for test_case in self.test_cases:
             time_s = time.time()
             cmd = "python %s/%s" % (test_case.root, test_case.file)
@@ -144,11 +147,11 @@ class Run():
         self.nothread()
         time_end1 = time.time()
         self.no_thread_run_time_sum = time_end1-time_start1
-        self.runlog()'''
+        self.runlog()
 
 
 test = Run()
 test.data()
-test.run_thread_test_case()
-#test.run_no_thread_test_case()
+#test.run_thread_test_case()
+test.run_no_thread_test_case()
 

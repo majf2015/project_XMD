@@ -24,6 +24,7 @@ class Mysqldb:
         self.db_free_tech()
         self.db_verify_coupon()
         self.db_verify_order()
+        self.db_verify_prize()
         self.db_bill_reminder()
 
         self.write_to_test_data()
@@ -92,7 +93,7 @@ class Mysqldb:
             print e
             self.conn.rollback()
         if self.debug:
-            print "db_verify_order"
+            print "db_verify_prize"
 
     def db_bill_reminder(self):
         sql_update_bill = "UPDATE  spa_fast_pay_order SET status = 'paid' WHERE club_id =  %s " % self.account['clubid']

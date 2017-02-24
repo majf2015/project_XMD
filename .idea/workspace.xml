@@ -21,11 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/data/data.py">
+      <file leaf-file-name="market_test_SQL.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SQL/market/market_test_SQL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8361153">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="market_test_data.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQL/market/market_test_data.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="12" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="market.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/market/market.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
               </folding>
@@ -33,14 +53,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcase/home/home.py">
+      <file leaf-file-name="run.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/market/run.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.33154362">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#24#43#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQL/market/run.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,14 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testlog.py" />
-        <option value="$PROJECT_DIR$/test_case/test_print.py" />
-        <option value="$PROJECT_DIR$/test_case/test_tech/test_tech.py" />
-        <option value="$PROJECT_DIR$/test_case/test_home/run_result.txt" />
-        <option value="$PROJECT_DIR$/test_case/test_tech/run_result.txt" />
-        <option value="$PROJECT_DIR$/test_case/run_result.txt" />
-        <option value="$PROJECT_DIR$/test_case/test_home/test_home.py" />
-        <option value="$PROJECT_DIR$/test_case/test_tech/run.log" />
         <option value="$PROJECT_DIR$/test_case/run.log" />
         <option value="$PROJECT_DIR$/test_case/test_home/run.log" />
         <option value="$PROJECT_DIR$/test_manager.py" />
@@ -94,7 +114,6 @@
         <option value="$PROJECT_DIR$/global_attributes.py" />
         <option value="$PROJECT_DIR$/login.py" />
         <option value="$PROJECT_DIR$/test_data.conf" />
-        <option value="$PROJECT_DIR$/StudyNotes.txt" />
         <option value="$PROJECT_DIR$/mysqldb.py" />
         <option value="$PROJECT_DIR$/manager.py" />
         <option value="$PROJECT_DIR$/testcase/manager.py" />
@@ -104,21 +123,30 @@
         <option value="$PROJECT_DIR$/SQL/data_test_data.conf" />
         <option value="$PROJECT_DIR$/SQL/home_test_data.conf" />
         <option value="$PROJECT_DIR$/SQL/home_test_SQL.py" />
-        <option value="$PROJECT_DIR$/testcase/data/data.py" />
-        <option value="$PROJECT_DIR$/testcase/home/home.py" />
         <option value="$PROJECT_DIR$/manager_SQL.py" />
         <option value="$PROJECT_DIR$/SQL/data/data_test_SQL.py" />
-        <option value="$PROJECT_DIR$/SQL/home/home_test_SQL.py" />
-        <option value="$PROJECT_DIR$/SQL/home/home_test_data.conf" />
         <option value="$PROJECT_DIR$/SQL/data/data_test_data.conf" />
+        <option value="$PROJECT_DIR$/SQL/home/home_test_SQL.py" />
+        <option value="$PROJECT_DIR$/StudyNotes.txt" />
+        <option value="$PROJECT_DIR$/manager_test_case.py" />
+        <option value="$PROJECT_DIR$/testcase/home/home.py" />
+        <option value="$PROJECT_DIR$/SQL/home/home_test_data.conf" />
+        <option value="$PROJECT_DIR$/SQL/markey/market_test_SQL.py" />
+        <option value="$PROJECT_DIR$/testcase/data/data.py" />
+        <option value="$PROJECT_DIR$/SQL/markey/market_test_data.conf" />
+        <option value="$PROJECT_DIR$/SQL/market/market_test_data.conf" />
+        <option value="$PROJECT_DIR$/testcase/market/market.py" />
+        <option value="$PROJECT_DIR$/testcase/market/run.log" />
+        <option value="$PROJECT_DIR$/SQL/market/run.log" />
+        <option value="$PROJECT_DIR$/SQL/market/market_test_SQL.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="258" />
-    <option name="y" value="39" />
-    <option name="width" value="1073" />
-    <option name="height" value="906" />
+    <option name="x" value="305" />
+    <option name="y" value="154" />
+    <option name="width" value="1249" />
+    <option name="height" value="936" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -193,6 +221,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="market" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testcase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -226,6 +272,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="market" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,14 +341,8 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project_XMD" />
-      <recent name="E:\project_XMD\SQL" />
-      <recent name="E:\project_XMD\SQL\home" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\project_XMD\SQL\home" />
       <recent name="E:\project_XMD\SQL\data" />
@@ -292,86 +350,13 @@
       <recent name="E:\project_XMD\SQL" />
       <recent name="E:\project_XMD\testcase" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project_XMD\SQL" />
+      <recent name="E:\project_XMD" />
+      <recent name="E:\project_XMD\SQL\home" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.manager_SQL">
-    <configuration default="false" name="Unittest Home.test_tech" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/home/home.py" />
-      <option name="CLASS_NAME" value="Home" />
-      <option name="METHOD_NAME" value="test_tech" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest Data.test_registered" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/data/data.py" />
-      <option name="CLASS_NAME" value="Data" />
-      <option name="METHOD_NAME" value="test_registered" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="data_test_SQL (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SQL/data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SQL/data/data_test_SQL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="home_test_SQL (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SQL/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SQL/home/home_test_SQL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittest Market.test_create_paid_coupon">
     <configuration default="false" name="manager_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -387,6 +372,94 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manager_SQL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Home.test_verify_prize" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/home/home.py" />
+      <option name="CLASS_NAME" value="Home" />
+      <option name="METHOD_NAME" value="test_verify_prize" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Market.test_create_paid_coupon" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/market" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/market/market.py" />
+      <option name="CLASS_NAME" value="Market" />
+      <option name="METHOD_NAME" value="test_create_paid_coupon" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Market.test_create_paid_coupon (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/market" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/market/market.py" />
+      <option name="CLASS_NAME" value="Market" />
+      <option name="METHOD_NAME" value="test_create_paid_coupon" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Market" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/market" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/market/market.py" />
+      <option name="CLASS_NAME" value="Market" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -512,19 +585,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_tech" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Data.test_registered" />
-      <item index="2" class="java.lang.String" itemvalue="Python.data_test_SQL (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.home_test_SQL (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.manager_SQL" />
+      <item index="0" class="java.lang.String" itemvalue="Python.manager_SQL" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_verify_prize" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_paid_coupon" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_paid_coupon (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Market" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.manager_SQL" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_tech" />
-        <item index="2" class="java.lang.String" itemvalue="Python.home_test_SQL (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Data.test_registered" />
-        <item index="4" class="java.lang.String" itemvalue="Python.data_test_SQL (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_paid_coupon" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Market" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_paid_coupon (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_verify_prize" />
+        <item index="4" class="java.lang.String" itemvalue="Python.manager_SQL" />
       </list>
     </recent_temporary>
   </component>
@@ -542,48 +615,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_Data_test_registered - 2017.02.24 at 12h 13m 01s.xml">
-      <configuration name="Unittest Data.test_registered" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 10m 57s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Data_test_registered - 2017.02.24 at 12h 16m 30s.xml">
-      <configuration name="Unittest Data.test_registered" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 11m 38s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_bill_reminder - 2017.02.24 at 10h 59m 46s.xml">
-      <configuration name="Unittest Home.test_bill_reminder" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 13m 39s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_bill_reminder - 2017.02.24 at 11h 06m 19s.xml">
-      <configuration name="Unittest Home.test_bill_reminder" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 34m 54s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_bill_reminder - 2017.02.24 at 11h 16m 43s.xml">
-      <configuration name="Unittest Home.test_bill_reminder" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 36m 23s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_tech - 2017.02.24 at 11h 30m 46s.xml">
-      <configuration name="Unittest Home.test_tech" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 38m 55s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_tech - 2017.02.24 at 11h 54m 46s.xml">
-      <configuration name="Unittest Home.test_tech" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 18h 47m 06s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_tech - 2017.02.24 at 11h 58m 22s.xml">
-      <configuration name="Unittest Home.test_tech" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon - 2017.02.24 at 19h 04m 15s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_tech - 2017.02.24 at 11h 59m 17s.xml">
-      <configuration name="Unittest Home.test_tech" configurationId="tests" />
+    <history-entry file="Unittest_Market_test_create_paid_coupon_(1) - 2017.02.24 at 18h 13m 05s.xml">
+      <configuration name="Unittest Market.test_create_paid_coupon (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_Home_test_tech - 2017.02.24 at 12h 18m 33s.xml">
-      <configuration name="Unittest Home.test_tech" configurationId="tests" />
+    <history-entry file="Unittests_in_Market - 2017.02.24 at 18h 37m 28s.xml">
+      <configuration name="Unittests in Market" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="258" y="39" width="1073" height="906" extended-state="0" />
-    <editor active="false" />
+    <frame x="305" y="154" width="1249" height="936" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20813623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2887267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26441103" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.032581452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17149758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -642,7 +715,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#23#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +749,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#23#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -694,7 +766,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#23#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -721,7 +793,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#23#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,27 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/home/run.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/data/run.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/run.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/test_project_XMD/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -873,19 +924,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudyNotes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.821428">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,32 +936,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager_test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQL/data/data_test_SQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61538464">
-          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQL/home/home_test_SQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
-          <folding>
-            <element signature="e#23#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26923078">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,30 +958,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQL/home/home_test_data.conf">
+    <entry file="file://$PROJECT_DIR$/SQL/run.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28540772">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SQL/data/data_test_data.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16309012">
+        <state vertical-scroll-proportion="0.13286713">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/data/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/home/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/data/data_test_SQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0395062">
+          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager_test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manager_SQL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71862346">
-          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.62469137">
+          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudyNotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5777778">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/home/home_test_SQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0466926">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -974,20 +1043,68 @@
     <entry file="file://$PROJECT_DIR$/testcase/data/data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/home/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="113" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="113" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/home/home.py">
+    <entry file="file://$PROJECT_DIR$/SQL/home/home_test_data.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33154362">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.15689382">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/market/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/market/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/market/market.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/market/market_test_data.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/market/market_test_SQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8361153">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

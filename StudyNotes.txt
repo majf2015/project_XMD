@@ -53,8 +53,14 @@ print
 s.decode('utf-8')
 u.encode('utf-8')
 
+问题8：cmd 运行python脚本 不执行unittest.TestCase
+if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(Home)
+    unittest.TextTestRunner(verbosity=2).run(suite)
 
-
+    unittest.TestSuite()：unittest框架的TestSuite()类是用来创建测试套件的。
+    unittest.TextTextRunner():unittest框架的TextTextRunner()类，通过该类下面的run()方法来运行suite所组装的测试用例，入参为suite测试套件。
+    unittest.defaultTestLoader(): defaultTestLoader()类，通过该类下面的discover()方法可自动更具测试目录start_dir匹配查找测试用例文件（test*.py），并将查找到的测试用例组装到测试套件，因此可以直接通过run()方法执行
 
 
 
