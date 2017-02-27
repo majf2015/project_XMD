@@ -58,20 +58,41 @@ class Market(unittest.TestCase):
         self.browser.find_element_by_css_selector("a[class = \"toolButton info\"]").click()
         time.sleep(0.5)
         self.browser.find_element_by_name("aticName").send_keys(coupon_data["wheel_name"].decode('utf-8'))
-        self.browser.find_element_by_name("addTime").clear()
-        self.browser.find_element_by_name("addTime").send_keys(coupon_data["wheel_time"])
-        time.sleep(5)
+        #self.browser.find_element_by_name("addTime").clear()
+        #self.browser.find_element_by_name("addTime").send_keys(coupon_data["wheel_time"])
+        #time.sleep(5)
         #self.browser.find_element_by_xpath("//div[@class = 'ranges']/div[@class = 'range_inputs']"
         #                                   "/button[1]").click()
         #self.browser.find_element_by_xpath("//button[@class = 'applyBtn btn btn-sm btn-success']").click()
-        #self.browser.find_element_by_class_name("applyBtn btn btn-sm btn-success").click()
+        #self.browser.find_element_by_class_name("applyBtn.btn.btn-sm.btn-success").click()
         #self.browser.find_element_by_css_selector("button[class = \'applyBtn btn btn-sm btn-success\']").click()
-        self.browser.find_element_by_link_text("确定").click()
+        #self.browser.find_element_by_link_text("确定").click()
         self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[1]/td[@ class = 'name']/input")\
             .send_keys(coupon_data["wheel_point"])
-        #self.browser.find_element_by_xpath("//div[@id = 'editDialSellModal']/div/div[@class = 'footer']/a[1]").click()
-        time.sleep(3)
-
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[1]/td[@ class = 'number']/input")\
+            .send_keys(coupon_data["wheel_point_number"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[1]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_point_concept"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[2]/td[@ class = 'name']/input")\
+            .send_keys(coupon_data["wheel_prize"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[2]/td[@ class = 'number']/input")\
+            .send_keys(coupon_data["wheel_prize_number"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[2]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_prize_concept"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[3]/td[@ class = 'number']/input")\
+            .send_keys(coupon_data["wheel_coupon_number"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[3]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_coupon_concept"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[4]/td[@ class = 'number']/input")\
+            .send_keys(coupon_data["wheel_item_number"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[4]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_item_concept"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[5]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_once_more_concept"])
+        self.browser.find_element_by_xpath("//tbody[@class = 'add']/tr[6]/td[@ class = 'concept']/input")\
+            .send_keys(coupon_data["wheel_no_win_concept"])
+        self.browser.find_element_by_id("editActContent").send_keys(coupon_data["wheel_content"].decode('utf-8'))
+        self.browser.find_element_by_xpath("//div[@id = 'editDialSellModal']/div/div[@class = 'footer']/a[1]").click()
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(Market)

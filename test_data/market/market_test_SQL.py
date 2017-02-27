@@ -21,6 +21,7 @@ class Mysqldb:
     def run_main(self):
         self.db_paid_coupon()
         self.db_coupon()
+        self.db_lucky_wheel()
 
         self.write_to_test_data()
         self.cursor.close()
@@ -49,6 +50,18 @@ class Mysqldb:
             self.conn.rollback()
         if self.debug:
             print "db_coupon"
+
+    def db_lucky_wheel(self):
+        sql_update_lucky_wheel = "UPDATE `spa_lucky_wheel_activity` set `status` = '2' WHERE  club_id = %s " \
+                                 % self.account['clubid']
+        try:
+            self.cursor.execute(sql_update_lucky_wheel)
+            self.conn.commit()
+        except Exception as e:
+            print e
+            self.conn.rollback()
+        if self.debug:
+            print "db_lucky_wheel"
 
     def write_to_test_data(self):
         self.test_data.write(open('E:/project_XMD/test_data/market/market_test_data.conf','w'))
