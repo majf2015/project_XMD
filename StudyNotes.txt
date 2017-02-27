@@ -62,6 +62,10 @@ if __name__ == "__main__":
     unittest.TextTextRunner():unittest框架的TextTextRunner()类，通过该类下面的run()方法来运行suite所组装的测试用例，入参为suite测试套件。
     unittest.defaultTestLoader(): defaultTestLoader()类，通过该类下面的discover()方法可自动更具测试目录start_dir匹配查找测试用例文件（test*.py），并将查找到的测试用例组装到测试套件，因此可以直接通过run()方法执行
 
+问题9：sql查询结果输出dict类型
+增加导入：import MySQLdb.cursors
+db 增加参数：cursorclass = MySQLdb.cursors.DictCursor
 
-
+问题10：除法并保留两位小数
+字符串替换'%0.2f' % float(a)/b
 

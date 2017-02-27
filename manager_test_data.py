@@ -45,7 +45,7 @@ class Manager():
 
 class Run():
     def __init__(self):
-        self.root = 'E:/project_XMD/SQL'
+        self.root = 'E:/project_XMD/test_data'
         self.sql = []
         self.no_thread_run_time_sum = 0
         self.thread_all_run_time_sum = 0
@@ -63,7 +63,7 @@ class Run():
             if len(files) != 0:
                 for file in files:
                     file_name, file_type = os.path.splitext(file)
-                    if file_type == '.py':
+                    if file_type == '.py'and  file_name != '__init__':
                         self.sql.append(Manager(root, file))
                     #清空日志文件
                     elif self.debug and file_type == '.log':

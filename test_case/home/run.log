@@ -1,6 +1,6 @@
 
 
-2017-02-24 15:58:38
+2017-02-27 10:07:57
 result : bill reminder data right
 pass and unpass right
 order first_record right
@@ -16,6 +16,7 @@ ordinary_coupon : 106341781024
 share_coupon : 106962731054
 verify_coupon_phone : 13823549913
 verify_order : 116198101943
+verify_prize : 176567404992
 
 name : home.py
-run_time : 97.5479998589
+run_time : 92.6779999733

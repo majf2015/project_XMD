@@ -11,7 +11,7 @@ class Data(unittest.TestCase):
         self.conf = ConfigParser.ConfigParser()
         self.conf.read(r"E:/project_XMD/config.conf")
         self.test_data = ConfigParser.ConfigParser()
-        self.test_data.read(r"E:/project_XMD/SQL/data/data_test_data.conf")
+        self.test_data.read(r"E:/project_XMD/test_data/data/data_test_data.conf")
         self.debug = int(self.conf.get('Debug','debug'))
         self.Browser = login.Login()
         self.Browser.login()

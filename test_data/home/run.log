@@ -1,6 +1,6 @@
 
 
-2017-02-24 16:03:57
+2017-02-27 10:39:15
 result : 3
 db_tech
 1
@@ -12,10 +12,4 @@ db_verify_prize
 db_bill_reminder
 
 name : home_test_SQL.py
-run_time : 0.401000022888
-
-
-2017-02-24 16:03:57
-result : 
-name : __init__.py
-run_time : 0.205999851227
+run_time : 0.362999916077

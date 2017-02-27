@@ -11,7 +11,7 @@ class Home(unittest.TestCase):
         self.conf = ConfigParser.ConfigParser()
         self.conf.read(r"E:/project_XMD/config.conf")
         self.test_data = ConfigParser.ConfigParser()
-        self.test_data.read(r"E:/project_XMD/SQL/home/home_test_data.conf")
+        self.test_data.read(r"E:/project_XMD/test_data/home/home_test_data.conf")
         self.debug = int(self.conf.get('Debug','debug'))
         self.Browser = login.Login()
         self.Browser.login()
@@ -86,20 +86,23 @@ class Home(unittest.TestCase):
     def test_bill_reminder(self):
         time.sleep(1)
         if self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr").text \
-                ==self.test_data.get('Bill','bill_reminder').decode('utf-8'):
+                ==self.test_data.get('Bill','bill_reminder_first_record').decode('utf-8') and  self.debug:
             print 'bill reminder data right'
         time.sleep(1)
         self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[1]").click()
         self.browser.find_element_by_id("confirm-fast-pay-remark").send_keys(u"确认")
         self.browser.find_element_by_xpath("//div[@id = 'confirmFastPayModal']"
                                            "/div/div[@class = 'footer']/a[@class = 'ok']").click()
+        if self.debug:
+            print 'bill reminder unpass right'
         time.sleep(1)
         self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[2]").click()
         self.browser.find_element_by_id("confirm-fast-pay-remark").send_keys(u"异常")
         time.sleep(1)
         self.browser.find_element_by_xpath("//div[@id = 'confirmFastPayModal']"
                                            "/div/div[@class = 'footer']/a[@class = 'ok']").click()
-        print 'pass and unpass right'
+        if self.debug:
+            print 'bill reminder pass right'
 
     #通过时间控件及技师编号筛选出订单、核对查询记录总数、核对第一条记录数据
     def test_order_list(self):
