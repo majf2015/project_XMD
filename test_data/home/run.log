@@ -1,7 +1,7 @@
 
 
-2017-02-27 10:39:15
-result : 3
+2017-03-01 11:54:44
+result : 2
 db_tech
 1
 db_busy_tech
@@ -10,6 +10,7 @@ db_verify_coupon
 db_verify_order
 db_verify_prize
 db_bill_reminder
+db_bill_reminder_first_record
 
 name : home_test_SQL.py
-run_time : 0.362999916077
+run_time : 0.401999950409

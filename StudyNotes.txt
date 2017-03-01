@@ -69,3 +69,8 @@ db 增加参数：cursorclass = MySQLdb.cursors.DictCursor
 问题10：除法并保留两位小数
 字符串替换'%0.2f' % float(a)/b
 
+问题11：cmd命令行交互执行python引入模块时提示ImportError: No module named xxx
+直接把文件拷贝到$python_dir/lib
+
+ubuntu系统远程链接教程：
+http://jingyan.baidu.com/album/c275f6bacd2227e33c756754.html?picindex=2

@@ -33,6 +33,7 @@ class Mysqldb:
         self.result['register'] = filter(str.isdigit,str(self.cursor.fetchall())) #str
         if self.debug:
             print "db_registered"
+        print "db_registered"
 
     def db_phone_registered(self):
         sql_select_phone_register = "SELECT count(*) from spa_user_club uc inner join  spa_user u on uc.user_id = u.id " \

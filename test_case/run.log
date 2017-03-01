@@ -1,15 +1,8 @@
 
 
-2017-02-27 10:07:57
-result : 
-name : __init__.py
-run_time : 0.164000034332
-
-
-2017-02-27 10:07:57
+2017-03-01 11:57:36
 error_test_cases : 
- E:/project_XMD/test_case : __init__.py 
  E:/project_XMD/test_case\market : market.py 
-error : 2
+error : 1
 success : 2
 thread_time : 0

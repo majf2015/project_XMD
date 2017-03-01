@@ -32,7 +32,7 @@ class Data(unittest.TestCase):
 
     #查看详情、核对详情记录总数
     def test_phone_registered(self):
-        time.sleep(1)
+        time.sleep(1.5)
         self.browser.find_element_by_css_selector("div[nav = \"dataStatistics\"").click()
         self.browser.find_element_by_css_selector("li[nav=\"registeredDataStatistics\"").click()
         time.sleep(1)

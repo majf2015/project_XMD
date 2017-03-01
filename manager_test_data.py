@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, time, threading, subprocess,ConfigParser
+import sys,os, time, threading, subprocess,ConfigParser
 
 
 class Manager():
@@ -45,7 +45,8 @@ class Manager():
 
 class Run():
     def __init__(self):
-        self.root = 'E:/project_XMD/test_data'
+        self.project_url = sys.path[0]
+        self.root = os.path.join(self.project_url,'test_data')
         self.sql = []
         self.no_thread_run_time_sum = 0
         self.thread_all_run_time_sum = 0
@@ -53,7 +54,7 @@ class Run():
         self.sql_error = 0
         self.error_sql = []
         self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/config.conf")
+        self.conf.read(os.path.join(self.project_url,'config.conf'))
         self.debug = int(self.conf.get('Debug','debug'))
 
     #收集项目中的sql文件，如果需要顺便清空日志文件
@@ -146,6 +147,9 @@ class Run():
         self.no_thread_run_time_sum = time_end1-time_start1
         self.runlog()'''
 
+    def write_to_test_data(self):
+        self.conf.set('Url','project_url',self.project_url)
+        self.conf.write(open(os.path.join(self.project_url,'test_data/config.conf','w')))
 
 test = Run()
 test.data()
