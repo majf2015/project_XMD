@@ -1,23 +1,6 @@
 
 
-2017-03-01 11:57:36
-result : bill reminder data right
-bill reminder unpass right
-bill reminder pass right
-order first_record right
-tech data right
-busy_tech data right
-free_tech data right
-paid_service_item_coupon : 166266091087
-discount_item_coupon : 166559021047
-paid_coupon : 106761831062
-wheel_coupon : 166931701238
-register_coupon : 106954731063
-ordinary_coupon : 106341781024
-share_coupon : 106962731054
-verify_coupon_phone : 13823549913
-verify_order : 116198101943
-verify_prize : 176567404992
-
+2017-03-01 17:11:36
+result : 
 name : home.py
-run_time : 95.4409999847
+run_time : 0.615000009537

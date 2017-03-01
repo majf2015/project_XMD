@@ -1,15 +1,16 @@
 # -*- coding:UTF-8 -*-
-import MySQLdb
-import ConfigParser
-
+import MySQLdb, ConfigParser, os, sys
+import public_module
 
 class Mysqldb:
     def __init__(self):
+        self.current_path = sys.path[0]
+        self.project_path = os.path.dirname(os.path.dirname(self.current_path))
         self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/config.conf")
+        self.conf.read(os.path.join(self.project_path,'config.conf'))
         self.debug = int(self.conf.get('Debug','debug'))
         self.test_data = ConfigParser.ConfigParser()
-        self.test_data.read(r"E:/project_XMD/test_data/data/data_test_data.conf")
+        self.test_data.read(os.path.join(self.project_path,'test_data\data\data_test_data.conf'))
         self.db = dict(self.conf.items('DB'))
         self.account = dict(self.conf.items('ManagerAccount'))
         self.conn = MySQLdb.Connection\
@@ -48,7 +49,7 @@ class Mysqldb:
     def write_to_test_data(self):
         self.test_data.set('DataAnalysis','register',self.result['register'])
         self.test_data.set('DataAnalysis','phone_register',self.result['phone_register'])
-        self.test_data.write(open('E:/project_XMD/test_data/data/data_test_data.conf','w'))
+        self.test_data.write(open(os.path.join(self.project_path,'test_data\data\data_test_data.conf'),'w'))
 
 
 db = Mysqldb()

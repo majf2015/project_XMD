@@ -74,3 +74,6 @@ db 增加参数：cursorclass = MySQLdb.cursors.DictCursor
 
 ubuntu系统远程链接教程：
 http://jingyan.baidu.com/album/c275f6bacd2227e33c756754.html?picindex=2
+
+问题12：主动抛出异常
+raise Exception("error")

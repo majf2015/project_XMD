@@ -1,17 +1,17 @@
 # -*- coding:UTF-8 -*-
-import MySQLdb
-import ConfigParser
-import MySQLdb.cursors
+import MySQLdb, ConfigParser, MySQLdb.cursors, os, sys
 
 
 
 class Mysqldb:
     def __init__(self):
+        self.current_path = sys.path[0]
+        self.project_path = os.path.dirname(os.path.dirname(self.current_path))
         self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/config.conf")
+        self.conf.read(os.path.join(self.project_path,'config.conf'))
         self.debug = int(self.conf.get('Debug','debug'))
         self.test_data = ConfigParser.ConfigParser()
-        self.test_data.read(r"E:/project_XMD/test_data/home/home_test_data.conf")
+        self.test_data.read(os.path.join(self.project_path,'test_data\home\home_test_data.conf'))
         self.db = dict(self.conf.items('DB'))
         self.account = dict(self.conf.items('ManagerAccount'))
         self.coupon_data = dict(self.test_data.items('Coupon'))
@@ -134,7 +134,7 @@ class Mysqldb:
         self.test_data.set('Tech','busy_tech',self.result['busy_tech'])
         self.test_data.set('Tech','free_tech',self.result['free_tech'])
         self.test_data.set('Bill','bill_reminder_first_record',self.result['bill_reminder_first_record'])
-        self.test_data.write(open('E:/project_XMD/test_data/home/home_test_data.conf','w'))
+        self.test_data.write(open(os.path.join(self.project_path,'test_data\home\home_test_data.conf'),'w'))
 
 
 db = Mysqldb()

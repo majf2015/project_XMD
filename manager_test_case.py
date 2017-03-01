@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, time, threading, subprocess,ConfigParser
+import sys, os, time, threading, subprocess,ConfigParser
 
 
 class Manager():
@@ -45,16 +45,17 @@ class Manager():
 
 class Run():
     def __init__(self):
-        self.root = 'E:/project_XMD/test_case'
+        self.current_path = sys.path[0]
+        self.conf = ConfigParser.ConfigParser()
+        self.conf.read(os.path.join(self.current_path,'config.conf'))
+        self.debug = int(self.conf.get('Debug','debug'))
+        self.root = os.path.join(self.current_path,'test_case')
         self.test_cases = []
         self.no_thread_run_time_sum = 0
         self.thread_all_run_time_sum = 0
         self.test_case_success = 0
         self.test_case_error = 0
         self.error_test_case = []
-        self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/config.conf")
-        self.debug = int(self.conf.get('Debug','debug'))
 
     #收集项目中的test_case文件，如果需要顺便清空日志文件
     def data(self):

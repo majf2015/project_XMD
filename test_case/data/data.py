@@ -1,21 +1,17 @@
 # -*- coding: utf-8 -*-
-import ConfigParser
-import time
-import unittest
-
-import login
+import ConfigParser, time, unittest, os, sys, public_module
 
 
 class Data(unittest.TestCase):
     def setUp(self):
-        self.conf = ConfigParser.ConfigParser()
-        self.conf.read(r"E:/project_XMD/config.conf")
+        self.public = public_module.Public()
+        self.public.login()
+        self.conf = self.public.conf
+        self.project_path = self.public.project_path
+        self.browser = self.public.browser
+        self.debug = self.public.debug
         self.test_data = ConfigParser.ConfigParser()
-        self.test_data.read(r"E:/project_XMD/test_data/data/data_test_data.conf")
-        self.debug = int(self.conf.get('Debug','debug'))
-        self.Browser = login.Login()
-        self.Browser.login()
-        self.browser = self.Browser.browser
+        self.test_data.read(os.path.join(self.project_path,'test_data\data\data_test_data.conf'))
 
     def tearDown(self):
         self.browser.quit()

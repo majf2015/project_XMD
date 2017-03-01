@@ -45,8 +45,8 @@ class Manager():
 
 class Run():
     def __init__(self):
-        self.project_url = sys.path[0]
-        self.root = os.path.join(self.project_url,'test_data')
+        self.current_path = sys.path[0]
+        self.root = os.path.join(self.current_path,'test_data')
         self.sql = []
         self.no_thread_run_time_sum = 0
         self.thread_all_run_time_sum = 0
@@ -54,7 +54,7 @@ class Run():
         self.sql_error = 0
         self.error_sql = []
         self.conf = ConfigParser.ConfigParser()
-        self.conf.read(os.path.join(self.project_url,'config.conf'))
+        self.conf.read(os.path.join(self.current_path,'config.conf'))
         self.debug = int(self.conf.get('Debug','debug'))
 
     #收集项目中的sql文件，如果需要顺便清空日志文件
@@ -129,6 +129,7 @@ class Run():
         self.thread_all_run_time_sum = time_end-time_start
         self.runlog()
 
+
     #以下代码是对比在执行测试用例时不使用线程同步批量执行所需要的执行时间
     '''def nothread(self):
         for sql in self.sql:
@@ -147,12 +148,12 @@ class Run():
         self.no_thread_run_time_sum = time_end1-time_start1
         self.runlog()'''
 
-    def write_to_test_data(self):
-        self.conf.set('Url','project_url',self.project_url)
-        self.conf.write(open(os.path.join(self.project_url,'test_data/config.conf','w')))
+
+    def run(self):
+        self.data()
+        self.run_thread_sql()
 
 test = Run()
-test.data()
-test.run_thread_sql()
+test.run()
 #test.run_no_thread_sql()
 

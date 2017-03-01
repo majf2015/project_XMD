@@ -1,8 +1,10 @@
 
 
-2017-03-01 11:57:36
+2017-03-01 17:11:36
 error_test_cases : 
- E:/project_XMD/test_case\market : market.py 
-error : 1
-success : 2
+ E:\project_XMD\test_case\data : data.py 
+ E:\project_XMD\test_case\home : home.py 
+ E:\project_XMD\test_case\market : market.py 
+error : 3
+success : 0
 thread_time : 0
