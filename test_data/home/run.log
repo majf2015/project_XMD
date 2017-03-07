@@ -1,6 +1,6 @@
 
 
-2017-03-01 18:32:33
+2017-03-07 15:35:42
 result : 2
 db_tech
 1
@@ -13,4 +13,4 @@ db_bill_reminder
 db_bill_reminder_first_record
 
 name : home_test_SQL.py
-run_time : 0.666999816895
+run_time : 0.399999856949

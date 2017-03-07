@@ -10,39 +10,6 @@ class Manager():
         self.result = "ready"
 
 
-    #把一些方法变成可读写属性来调用
-    @property
-    def root(self):
-        return self.root
-
-    @root.setter
-    def root(self, root):
-        self.root = root
-
-    @property
-    def file(self):
-        return self.file
-
-    @file.setter
-    def file(self, file):
-        self.file = file
-
-    @property
-    def result(self):
-        return self.result
-
-    @result.setter
-    def result(self, result):
-        self.result = result
-
-    @property
-    def run_time(self):
-        return self.run_time
-
-    @run_time.setter
-    def run_time(self, run_time):
-        self.run_time =  '%.8f sec' % run_time
-
 class Run():
     def __init__(self):
         self.current_path = sys.path[0]

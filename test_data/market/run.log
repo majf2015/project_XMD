@@ -1,9 +1,12 @@
 
 
-2017-03-01 18:32:33
-result : db_paid_coupon
-db_coupon
-db_lucky_wheel
+2017-03-07 15:35:42
+result : db_paid_coupon_update
+db_paid_coupon_delete
+db_coupon_update
+db_coupon_delete
+db_lucky_wheel_update
+db_lucky_wheel_delete
 
 name : market_test_SQL.py
-run_time : 0.322000026703
+run_time : 0.318000078201

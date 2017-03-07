@@ -1,6 +1,10 @@
 
 
-2017-03-01 17:11:36
-result : 
+2017-03-07 15:35:04
+result : test_coupon_online
+test_create_coupon
+test_create_paid_coupon
+test_paid_coupon_online
+
 name : market.py
-run_time : 0.578000068665
+run_time : 83.8489999771

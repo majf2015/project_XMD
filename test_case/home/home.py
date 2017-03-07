@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import ConfigParser, time, unittest, os, sys
-
-import public_module
-
+import ConfigParser, time, unittest, os, public_module
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.common.by import By
 
 class Home(unittest.TestCase):
     def setUp(self):
@@ -21,7 +21,8 @@ class Home(unittest.TestCase):
 
     #核对技师总数、忙/闲状态技师数
     def test_tech(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.XPATH, "//ul[@class='clearfix']/li[1]")))
         tec = filter(str.isdigit,str(self.browser.find_element_by_xpath("//ul[@class='clearfix']/li[1]")
                                      .text.encode('utf-8')))
         if self.test_data.get('Tech','tech') == tec:
@@ -39,23 +40,26 @@ class Home(unittest.TestCase):
     def test_verify_coupon_no(self):
         coupon_data = dict(self.test_data.items('Coupon'))
         for test_data in dict(self.test_data.items('Coupon')):
-            time.sleep(1)
             if self.debug:
                 print test_data,':',coupon_data[test_data]
-            self.browser.find_element_by_xpath("//input[@type = 'text']").send_keys(coupon_data[test_data])
+            WebDriverWait(self.browser, 5).until\
+                (expected_conditions.visibility_of_element_located((By.ID, "check-code-input")))
+            self.browser.find_element_by_id("check-code-input").send_keys(coupon_data[test_data])
             self.browser.find_element_by_css_selector( "a[class =\"toolButton info\"]").click()
-            time.sleep(1)
+            WebDriverWait(self.browser, 5).until\
+                (expected_conditions.visibility_of_element_located((By.XPATH, "//tbody/tr/td[5]/i")))
             self.browser.find_element_by_xpath("//tbody/tr/td[5]/i").click()
             self.browser.find_element_by_class_name("ok").click()
-            time.sleep(1)
             self.browser.refresh()
 
     #核销通过手机号查询的券
     def test_verify_coupon_phone(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.XPATH, "//input[@type = 'text']")))
         self.browser.find_element_by_xpath("//input[@type = 'text']").send_keys(self.test_data.get('Verify','phone'))
         self.browser.find_element_by_css_selector( "a[class =\"toolButton info\"]").click()
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.XPATH, "//tbody/tr/td[5]/i")))
         self.browser.find_element_by_xpath("//tbody/tr/td[5]/i").click()
         self.browser.find_element_by_class_name("ok").click()
         if self.debug:
@@ -63,49 +67,58 @@ class Home(unittest.TestCase):
 
     #核销付费预约
     def test_verify_order(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.XPATH, "//input[@type = 'text']")))
         self.browser.find_element_by_xpath("//input[@type = 'text']").send_keys(self.test_data.get('Verify','order'))
         self.browser.find_element_by_css_selector( "a[class =\"toolButton info\"").click()
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "a[class =\"ok\"]")))
         self.browser.find_element_by_css_selector( "a[class =\"ok\"]").click()
         if self.debug:
             print 'verify_order',':',self.test_data.get('Verify','order')
 
     #核销大转盘奖品
     def test_verify_prize(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until\
+            (expected_conditions.visibility_of_element_located((By.XPATH, "//input[@type = 'text']")))
         self.browser.find_element_by_xpath("//input[@type = 'text']").send_keys(self.test_data.get('Verify','prize'))
         self.browser.find_element_by_css_selector( "a[class =\"toolButton info\"]").click()
-        time.sleep(1)
-        self.browser.find_element_by_xpath("//div[@id = 'luckyWheelVerificationModal']/div/div[@class = 'footer']/a[@class = 'ok']").click()
+        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+             ((By.XPATH, "//div[@id = 'luckyWheelVerificationModal']/div/div[@class = 'footer']/a[@class = 'ok']")))
+        self.browser.find_element_by_xpath\
+            ("//div[@id = 'luckyWheelVerificationModal']/div/div[@class = 'footer']/a[@class = 'ok']").click()
         if self.debug:
             print 'verify_prize',':',self.test_data.get('Verify','prize')
 
     #买单提醒核对数据、确认提醒、异常提醒
     def test_bill_reminder(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+             ((By.XPATH, "//div[@class = 'dataTable']/table/tbody/tr")))
         if self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr").text \
                 ==self.test_data.get('Bill','bill_reminder_first_record').decode('utf-8') and  self.debug:
             print 'bill reminder data right'
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+             ((By.XPATH, "//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[1]")))
         self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[1]").click()
         self.browser.find_element_by_id("confirm-fast-pay-remark").send_keys(u"确认")
         self.browser.find_element_by_xpath("//div[@id = 'confirmFastPayModal']"
                                            "/div/div[@class = 'footer']/a[@class = 'ok']").click()
         if self.debug:
-            print 'bill reminder unpass right'
-        time.sleep(1)
+            print 'bill reminder pass right'
+
+        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+                                             ((By.XPATH, "//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[2]")))
         self.browser.find_element_by_xpath("//div[@class = 'dataTable']/table/tbody/tr/td[6]/a[2]").click()
         self.browser.find_element_by_id("confirm-fast-pay-remark").send_keys(u"异常")
         time.sleep(1)
-        self.browser.find_element_by_xpath("//div[@id = 'confirmFastPayModal']"
-                                           "/div/div[@class = 'footer']/a[@class = 'ok']").click()
+        self.browser.find_element_by_xpath("//div[@id = 'confirmFastPayModal']/div/div[@class = 'footer']/a[@class = 'ok']").click()
         if self.debug:
-            print 'bill reminder pass right'
+            print 'bill reminder unpass right'
 
     #通过时间控件及技师编号筛选出订单、核对查询记录总数、核对第一条记录数据
     def test_order_list(self):
-        time.sleep(1)
+        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+             ((By.XPATH, "//div[@class = 'searchForm time']/input[@type = 'text']")))
         self.browser.find_element_by_xpath("//div[@class = 'searchForm time']/input[@type = 'text']").clear()
         self.browser.find_element_by_xpath("//div[@class = 'searchForm time']/input[@type = 'text']").\
             send_keys(self.test_data.get('Order','time').decode('utf-8'))

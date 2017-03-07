@@ -1,79 +1,90 @@
 mysql_python安装：
-提示unable to find vcvarsall.bat（需要开发环境扩展包支持：如先安装VS）
+	提示unable to find vcvarsall.bat（需要开发环境扩展包支持：如先安装VS）
 
 解决方法直接下载修复版本安装：MySQL-python-1.2.3.win-amd64-py2.7.exe (1.0 MiB)
-http://www.codegood.com/archives/129
+	http://www.codegood.com/archives/129
 
 用户使用指导：
-http://mysql-python.sourceforge.net/MySQLdb.html
-http://www.cnblogs.com/coser/archive/2012/01/12/2320741.html
-cursor:
-http://www.jb51.net/article/57290.htm
-connect = Connection = Connect
-http://blog.163.com/longsu2010@yeah/blog/static/173612348201174113815700/
+	http://mysql-python.sourceforge.net/MySQLdb.html
+	http://www.cnblogs.com/coser/archive/2012/01/12/2320741.html
+	cursor:
+	http://www.jb51.net/article/57290.htm
+	connect = Connection = Connect
+	http://blog.163.com/longsu2010@yeah/blog/static/173612348201174113815700/
 
 
 selenium webdriver
-下载地址：
-https://pypi.python.org/pypi/selenium
-下载.tar.gz并解压
-在命令提示符窗口进入selenium内setup.py文件目录：命令pip setup.py install
+	下载地址：
+	https://pypi.python.org/pypi/selenium
+	下载.tar.gz并解压
+	在命令提示符窗口进入selenium内setup.py文件目录：命令pip setup.py install
 chrome及chromedriver.exe
-selenium webdriver需要浏览器的driver.exe
-网上下载chrome浏览器，并安装
-下载chromedriver.exe文件，无需安装，把该文件放到chrome的安装目录下与chrome.exe同一文件夹中
-重新启动电脑即可
+	selenium webdriver需要浏览器的driver.exe
+	网上下载chrome浏览器，并安装
+	下载chromedriver.exe文件，无需安装，把该文件放到chrome的安装目录下与chrome.exe同一文件夹中
+	重新启动电脑即可
 
 问题1：class定位报错
-find_element_by_xpath("//input[@value= '立即登录']")
+	find_element_by_xpath("//input[@value= '立即登录']")
 
 问题2：每运行完一个case浏览器就关闭了，每次都需要重新打开并重新登录
-在用例二中  把webdriver setsession方法提供出来
-unittest，每一个测试用例都会执行setup、tesrDown这两个方法
+	在用例二中  把webdriver setsession方法提供出来
+	unittest，每一个测试用例都会执行setup、tesrDown这两个方法
 
 
 问题3：cursor.execute执行update失效
-select不用执行commit, insert/update/delete需要commit
+	select不用执行commit, insert/update/delete需要commit
 
 问题4：如何修改配置文件把数据写入配置文件
-导入python自带ConfigParser,配置文件格式：[]session,属性键值对
+	导入python自带ConfigParser,配置文件格式：[]session,属性键值对
 
 问题5：检查页面展示数据
-unicode可表示的编码范围比utf8大，所以不能用这个方法filter(str.isdigit,str(r))----来提取数字
-r :<type 'unicode'>
-需要转换：filter(str.isdigit,str(r.encode('utf-8')))
+	unicode可表示的编码范围比utf8大，所以不能用这个方法filter(str.isdigit,str(r))----来提取数字
+	r :<type 'unicode'>
+	需要转换：filter(str.isdigit,str(r.encode('utf-8')))
 
 问题6：时间控件选择输入格式
-YYYY-MM-DD
+	YYYY-MM-DD
 
 问题7：中文
-s = '中文'
-u = u'中文'
-print
-s.decode('utf-8')
-u.encode('utf-8')
+	s = '中文'
+	u = u'中文'
+	print
+	s.decode('utf-8')
+	u.encode('utf-8')
 
 问题8：cmd 运行python脚本 不执行unittest.TestCase
-if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(Home)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+	if __name__ == "__main__":
+		suite = unittest.TestLoader().loadTestsFromTestCase(Home)
+		unittest.TextTestRunner(verbosity=2).run(suite)
 
     unittest.TestSuite()：unittest框架的TestSuite()类是用来创建测试套件的。
     unittest.TextTextRunner():unittest框架的TextTextRunner()类，通过该类下面的run()方法来运行suite所组装的测试用例，入参为suite测试套件。
     unittest.defaultTestLoader(): defaultTestLoader()类，通过该类下面的discover()方法可自动更具测试目录start_dir匹配查找测试用例文件（test*.py），并将查找到的测试用例组装到测试套件，因此可以直接通过run()方法执行
 
 问题9：sql查询结果输出dict类型
-增加导入：import MySQLdb.cursors
-db 增加参数：cursorclass = MySQLdb.cursors.DictCursor
+	增加导入：import MySQLdb.cursors
+	db 增加参数：cursorclass = MySQLdb.cursors.DictCursor
 
 问题10：除法并保留两位小数
-字符串替换'%0.2f' % float(a)/b
+	字符串替换'%0.2f' % float(a)/b
 
 问题11：cmd命令行交互执行python引入模块时提示ImportError: No module named xxx
-直接把文件拷贝到$python_dir/lib
+	直接把文件拷贝到$python_dir/lib
 
-ubuntu系统远程链接教程：
-http://jingyan.baidu.com/album/c275f6bacd2227e33c756754.html?picindex=2
+	ubuntu系统远程链接教程：
+	http://jingyan.baidu.com/album/c275f6bacd2227e33c756754.html?picindex=2
 
 问题12：主动抛出异常
-raise Exception("error")
+	raise Exception("error")
+
+问题13：用轮询方式替换sleep固定等待时间
+	用显示等待的方法替换了3个固定时间等待（共3.5S），执行时间从11.338S减少到了9.217S
+	from selenium.webdriver.support.wait import WebDriverWait
+	from selenium.webdriver.support import expected_conditions
+	from selenium.webdriver.common.by import By
+	
+	WebDriverWait(self.browser, 20, 0.1, ignored_exceptions=Exception).until\
+            (expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, "div[nav = \"dataStatistics\"")))
+	
+	

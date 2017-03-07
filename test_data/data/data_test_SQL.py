@@ -1,6 +1,5 @@
 # -*- coding:UTF-8 -*-
 import MySQLdb, ConfigParser, os, sys
-import public_module
 
 class Mysqldb:
     def __init__(self):
