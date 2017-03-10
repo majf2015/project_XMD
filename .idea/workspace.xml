@@ -21,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manager_test_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager_test_data.py">
+      <file leaf-file-name="tech.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case/tech/tech.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="market.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_case/market/market.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09388971">
-              <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.16733068">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="e#24#77#0" expanded="true" />
               </folding>
@@ -43,22 +33,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="market_test_SQL.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_data/market/market_test_SQL.py">
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/home/home.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="market_test_data.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_data/market/market_test_data.conf">
+      <file leaf-file-name="publicity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/publicity/publicity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.035714">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,11 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testcase/tech/tech.py" />
-        <option value="$PROJECT_DIR$/testcase/print.py" />
-        <option value="$PROJECT_DIR$/log.py" />
-        <option value="$PROJECT_DIR$/testcase/account/run.log" />
-        <option value="$PROJECT_DIR$/testcase/home/run.log" />
         <option value="$PROJECT_DIR$/testcase/main/run.log" />
         <option value="$PROJECT_DIR$/testcase/message/run.log" />
         <option value="$PROJECT_DIR$/testcase/tech/run.log" />
@@ -115,7 +102,6 @@
         <option value="$PROJECT_DIR$/SQL/market/run.log" />
         <option value="$PROJECT_DIR$/SQL/market/market_test_SQL.py" />
         <option value="$PROJECT_DIR$/test_data/market/market_test_data.conf" />
-        <option value="$PROJECT_DIR$/StudyNotes.txt" />
         <option value="$PROJECT_DIR$/manager_test_case.py" />
         <option value="$PROJECT_DIR$/config.conf" />
         <option value="$PROJECT_DIR$/test_data/home/home_test_data.conf" />
@@ -129,13 +115,19 @@
         <option value="$PROJECT_DIR$/test_case/home/home.py" />
         <option value="$PROJECT_DIR$/test_data/market/market_test_SQL.py" />
         <option value="$PROJECT_DIR$/test_case/market/market.py" />
+        <option value="$PROJECT_DIR$/StudyNotes.txt" />
+        <option value="$PROJECT_DIR$/test_data/tech/tech_test_data.conf" />
+        <option value="$PROJECT_DIR$/test_case/publicity/publicity.py" />
+        <option value="$PROJECT_DIR$/test_data/publicity/pulicity_test_SQL.py" />
+        <option value="$PROJECT_DIR$/test_data/tech/tech_test_SQL.py" />
+        <option value="$PROJECT_DIR$/test_case/tech/tech.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="141" />
-    <option name="y" value="94" />
-    <option name="width" value="1363" />
+    <option name="x" value="569" />
+    <option name="y" value="56" />
+    <option name="width" value="865" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -209,6 +201,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="publicity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="market" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -260,6 +288,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test_case" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_case" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_XMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_case" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="publicity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +397,12 @@
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project_XMD\test_data" />
+      <recent name="E:\project_XMD\SQL" />
+      <recent name="E:\project_XMD" />
+      <recent name="E:\project_XMD\SQL\home" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\project_XMD\SQL\home" />
       <recent name="E:\project_XMD\SQL\data" />
@@ -340,74 +410,8 @@
       <recent name="E:\project_XMD\SQL" />
       <recent name="E:\project_XMD\testcase" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project_XMD\SQL" />
-      <recent name="E:\project_XMD" />
-      <recent name="E:\project_XMD\SQL\home" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest Market.test_sms">
-    <configuration default="false" name="Unittest Home.test_bill_reminder" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/home/home.py" />
-      <option name="CLASS_NAME" value="Home" />
-      <option name="METHOD_NAME" value="test_bill_reminder" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="market_test_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_data/market" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_data/market/market_test_SQL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest Market.test_create_lucky_wheel" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/market" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project_XMD" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/market/market.py" />
-      <option name="CLASS_NAME" value="Market" />
-      <option name="METHOD_NAME" value="test_create_lucky_wheel" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittest Tech.test_tech_filter">
     <configuration default="false" name="Unittest Market.test_lucky_wheel_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -443,6 +447,67 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/market/market.py" />
       <option name="CLASS_NAME" value="Market" />
       <option name="METHOD_NAME" value="test_sms" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Tech.test_tech" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/tech" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/tech/tech.py" />
+      <option name="CLASS_NAME" value="Tech" />
+      <option name="METHOD_NAME" value="test_tech" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tech" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/tech" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/tech/tech.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Tech.test_tech_filter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/tech" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_XMD" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/tech/tech.py" />
+      <option name="CLASS_NAME" value="Tech" />
+      <option name="METHOD_NAME" value="test_tech_filter" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -575,19 +640,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_bill_reminder" />
-      <item index="1" class="java.lang.String" itemvalue="Python.market_test_SQL" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_lucky_wheel" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_lucky_wheel_online" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_sms" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_lucky_wheel_online" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_sms" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Tech.test_tech" />
+      <item index="3" class="java.lang.String" itemvalue="Python.tech" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Tech.test_tech_filter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_sms" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_lucky_wheel_online" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_create_lucky_wheel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.market_test_SQL" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Home.test_bill_reminder" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Tech.test_tech_filter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tech" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Tech.test_tech" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_sms" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Market.test_lucky_wheel_online" />
       </list>
     </recent_temporary>
   </component>
@@ -605,47 +670,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_Market_test_create_lucky_wheel - 2017.03.07 at 16h 30m 55s.xml">
-      <configuration name="Unittest Market.test_create_lucky_wheel" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_create_lucky_wheel - 2017.03.07 at 16h 32m 08s.xml">
-      <configuration name="Unittest Market.test_create_lucky_wheel" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_create_lucky_wheel - 2017.03.07 at 16h 32m 53s.xml">
-      <configuration name="Unittest Market.test_create_lucky_wheel" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_create_lucky_wheel - 2017.03.07 at 16h 35m 41s.xml">
-      <configuration name="Unittest Market.test_create_lucky_wheel" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_lucky_wheel_online - 2017.03.07 at 16h 33m 47s.xml">
-      <configuration name="Unittest Market.test_lucky_wheel_online" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_lucky_wheel_online - 2017.03.07 at 16h 42m 51s.xml">
-      <configuration name="Unittest Market.test_lucky_wheel_online" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_sms - 2017.03.07 at 16h 52m 36s.xml">
-      <configuration name="Unittest Market.test_sms" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_Market_test_sms - 2017.03.07 at 16h 54m 43s.xml">
-      <configuration name="Unittest Market.test_sms" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittest_Market_test_sms - 2017.03.07 at 16h 59m 48s.xml">
       <configuration name="Unittest Market.test_sms" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittest_Market_test_sms - 2017.03.07 at 17h 01m 06s.xml">
       <configuration name="Unittest Market.test_sms" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittest_Tech_test_tech - 2017.03.09 at 12h 00m 37s.xml">
+      <configuration name="Unittest Tech.test_tech" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech - 2017.03.09 at 12h 10m 36s.xml">
+      <configuration name="Unittest Tech.test_tech" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech - 2017.03.09 at 12h 11m 30s.xml">
+      <configuration name="Unittest Tech.test_tech" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech - 2017.03.09 at 12h 12m 41s.xml">
+      <configuration name="Unittest Tech.test_tech" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech - 2017.03.09 at 12h 13m 20s.xml">
+      <configuration name="Unittest Tech.test_tech" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech_filter - 2017.03.10 at 19h 31m 35s.xml">
+      <configuration name="Unittest Tech.test_tech_filter" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech_filter - 2017.03.10 at 19h 33m 35s.xml">
+      <configuration name="Unittest Tech.test_tech_filter" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_Tech_test_tech_filter - 2017.03.10 at 19h 34m 17s.xml">
+      <configuration name="Unittest Tech.test_tech_filter" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="141" y="94" width="1363" height="1047" extended-state="1" />
+    <frame x="569" y="56" width="865" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2353378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16489989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23015873" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25665602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43663472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -679,79 +744,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/home/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/data/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_data/home/home_test_SQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/data/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_data/home/home_test_SQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/home/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager_test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_data/home/home_test_SQL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/学习/自动化/pip-7.1.2/pip-7.1.2/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1016,16 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/home/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83829784">
-          <caret line="115" column="46" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
-          <folding>
-            <element signature="e#24#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manager_test_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1050,10 +1032,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StudyNotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1505216">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/publicity/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/tech/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/tech/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/market/market.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09388971">
-          <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="171" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/tech/tech_test_data.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.392857">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/publicity/run.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/tech/tech_test_SQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5836653">
+          <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/publicity/pulicity_test_SQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5079681">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/publicity/publicity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/home/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/tech/tech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16733068">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="e#24#77#0" expanded="true" />
           </folding>
