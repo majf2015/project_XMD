@@ -14,7 +14,6 @@ class Mysqldb:
         self.test_data.read(os.path.join(self.project_path,'test_data\\tech\\tech_test_data.conf'))
         self.db = dict(self.conf.items('DB'))
         self.account = dict(self.conf.items('ManagerAccount'))
-        self.coupon_data = dict(self.test_data.items('Coupon'))
         self.conn = MySQLdb.Connection\
         (host = self.db['host'], port = int(self.db['port']), user = self.db['user'], passwd = self.db['passwd'],
          db = self.db['db'], cursorclass = MySQLdb.cursors.DictCursor)

@@ -84,15 +84,15 @@ class Market(unittest.TestCase):
 
     #优惠券上线操作
     def test_coupon_online(self):
-        WebDriverWait(self.browser, 5).until\
+        WebDriverWait(self.browser, 50).until\
             (expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "div[nav = \"sellCenter\"]")))
         self.browser.find_element_by_css_selector("div[nav = \"sellCenter\"]").click()
         self.browser.find_element_by_css_selector("li[nav = \"ordinaryCouponSell\"]").click()
-        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+        WebDriverWait(self.browser, 50).until(expected_conditions.visibility_of_element_located
              ((By.XPATH, "//div[@id = 'dataListTable']/table/tbody/tr[1]/td[9]/a[2]")))
         self.browser.find_element_by_xpath("//div[@id = 'dataListTable']/table/tbody/tr[1]/td[9]/a[2]").click()
         self.browser.find_element_by_class_name("ok").click()
-        WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
+        WebDriverWait(self.browser, 50).until(expected_conditions.visibility_of_element_located
              ((By.XPATH, "//div[@id = 'dataListTable']/table/tbody/tr[1]/td[5]")))
         result_name = self.browser.find_element_by_xpath("//div[@id = 'dataListTable']/table/tbody/tr[1]/td[5]").text
         if result_name ==  u"使用中":
@@ -140,10 +140,9 @@ class Market(unittest.TestCase):
             .send_keys(coupon_data["wheel_no_win_concept"])
         self.browser.find_element_by_id("editActContent").send_keys(coupon_data["wheel_content"].decode('utf-8'))
         self.browser.find_element_by_xpath("//div[@id = 'editDialSellModal']/div/div[@class = 'footer']/a[2]").click()
-        time.sleep(0.5)
-        tr = self.browser.find_elements_by_xpath("//div[@id = 'dataListTable']/table/tbody/tr")
+        time.sleep(2)
         result_name = self.browser.find_element_by_xpath\
-            ("//div[@id = 'dataListTable']/table/tbody/tr[%s]/td[2]" % len(tr)).text
+            ("//div[@id = 'dataListTable']/table/tbody/tr[1]/td[2]").text
         if result_name  == u"自动增加大转盘":
             print 'test_create_lucky_wheel'
         else:
@@ -159,13 +158,12 @@ class Market(unittest.TestCase):
         self.browser.find_element_by_css_selector("li[nav = \"luckyWheel\"]").click()
         WebDriverWait(self.browser, 5).until\
             (expected_conditions.visibility_of_element_located((By.XPATH, "//div[@id = 'dataListTable']/table/tbody/tr")))
-        tr = self.browser.find_elements_by_xpath("//div[@id = 'dataListTable']/table/tbody/tr")
         self.browser.find_element_by_xpath\
-            ("//div[@id = 'dataListTable']/table/tbody/tr[%s]/td[6]/a[1]" % len(tr)).click()
+            ("//div[@id = 'dataListTable']/table/tbody/tr[1]/td[6]/a[1]").click()
         WebDriverWait(self.browser, 5).until(expected_conditions.visibility_of_element_located
-             ((By.XPATH, "//div[@id = 'dataListTable']/table/tbody/tr[%s]/td[4]" % len(tr))))
+             ((By.XPATH, "//div[@id = 'dataListTable']/table/tbody/tr[1]/td[4]")))
         result_status = self.browser.find_element_by_xpath\
-            ("//div[@id = 'dataListTable']/table/tbody/tr[%s]/td[4]" % len(tr)).text
+            ("//div[@id = 'dataListTable']/table/tbody/tr[1]/td[4]").text
         if result_status  == u"上线":
             print 'test_lucky_wheel_online'
         else:

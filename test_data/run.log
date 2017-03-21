@@ -1,7 +1,8 @@
 
 
-2017-03-07 15:35:42
-error : 0
+2017-03-21 10:34:46
+error : 1
 error_sql : 
-success : 3
-thread_time : 0.721999883652
+ E:\project_XMD\test_data\publicity : pulicity_test_SQL.py 
+success : 4
+thread_time : 1.7009999752
